@@ -14,6 +14,7 @@
 		5068FAC71DC8BDFE006BDC88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5068FAC51DC8BDFE006BDC88 /* LaunchScreen.storyboard */; };
 		5068FAD21DC8BDFE006BDC88 /* EyeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5068FAD11DC8BDFE006BDC88 /* EyeTests.swift */; };
 		5068FADD1DC8BDFE006BDC88 /* EyeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5068FADC1DC8BDFE006BDC88 /* EyeUITests.swift */; };
+		76E3270690A21AAF7E756AE2 /* Pods_Eye.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4F7BB84290A2430AF2F1E6E /* Pods_Eye.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3BB4255DAF465B465124463A /* Pods-Eye.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eye.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Eye/Pods-Eye.debug.xcconfig"; sourceTree = "<group>"; };
 		5068FAB91DC8BDFE006BDC88 /* Eye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5068FABC1DC8BDFE006BDC88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5068FABE1DC8BDFE006BDC88 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		5068FAD81DC8BDFE006BDC88 /* EyeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EyeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5068FADC1DC8BDFE006BDC88 /* EyeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyeUITests.swift; sourceTree = "<group>"; };
 		5068FADE1DC8BDFE006BDC88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		565EB014AB20A035A7E6B8B8 /* Pods-Eye.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eye.release.xcconfig"; path = "Pods/Target Support Files/Pods-Eye/Pods-Eye.release.xcconfig"; sourceTree = "<group>"; };
+		F4F7BB84290A2430AF2F1E6E /* Pods_Eye.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Eye.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76E3270690A21AAF7E756AE2 /* Pods_Eye.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,8 @@
 				5068FAD01DC8BDFE006BDC88 /* EyeTests */,
 				5068FADB1DC8BDFE006BDC88 /* EyeUITests */,
 				5068FABA1DC8BDFE006BDC88 /* Products */,
+				D0B96B95AC8E02E4AB95BCDF /* Pods */,
+				F74BDA40C8CF0D8395860A70 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +132,23 @@
 			path = EyeUITests;
 			sourceTree = "<group>";
 		};
+		D0B96B95AC8E02E4AB95BCDF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3BB4255DAF465B465124463A /* Pods-Eye.debug.xcconfig */,
+				565EB014AB20A035A7E6B8B8 /* Pods-Eye.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F74BDA40C8CF0D8395860A70 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F4F7BB84290A2430AF2F1E6E /* Pods_Eye.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5068FAE11DC8BDFE006BDC88 /* Build configuration list for PBXNativeTarget "Eye" */;
 			buildPhases = (
+				2B7165D86521BB8C4B15434B /* [CP] Check Pods Manifest.lock */,
 				5068FAB51DC8BDFE006BDC88 /* Sources */,
 				5068FAB61DC8BDFE006BDC88 /* Frameworks */,
 				5068FAB71DC8BDFE006BDC88 /* Resources */,
+				8E0BD2098AC3B726A7188836 /* [CP] Embed Pods Frameworks */,
+				3FED5BA7634C0DA027AF5CF5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +220,7 @@
 				TargetAttributes = {
 					5068FAB81DC8BDFE006BDC88 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 7JW8YRENJF;
 						ProvisioningStyle = Automatic;
 					};
 					5068FACC1DC8BDFE006BDC88 = {
@@ -253,6 +281,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B7165D86521BB8C4B15434B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3FED5BA7634C0DA027AF5CF5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Eye/Pods-Eye-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E0BD2098AC3B726A7188836 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Eye/Pods-Eye-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5068FAB51DC8BDFE006BDC88 /* Sources */ = {
@@ -410,9 +486,12 @@
 		};
 		5068FAE21DC8BDFE006BDC88 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BB4255DAF465B465124463A /* Pods-Eye.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7JW8YRENJF;
 				INFOPLIST_FILE = Eye/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = or2z.com.Eye;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -422,9 +501,12 @@
 		};
 		5068FAE31DC8BDFE006BDC88 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 565EB014AB20A035A7E6B8B8 /* Pods-Eye.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7JW8YRENJF;
 				INFOPLIST_FILE = Eye/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = or2z.com.Eye;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -505,6 +587,7 @@
 				5068FAE31DC8BDFE006BDC88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5068FAE41DC8BDFE006BDC88 /* Build configuration list for PBXNativeTarget "EyeTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +596,7 @@
 				5068FAE61DC8BDFE006BDC88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5068FAE71DC8BDFE006BDC88 /* Build configuration list for PBXNativeTarget "EyeUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +605,7 @@
 				5068FAE91DC8BDFE006BDC88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
