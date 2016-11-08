@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5068FABD1DC8BDFE006BDC88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5068FABC1DC8BDFE006BDC88 /* AppDelegate.swift */; };
-		5068FABF1DC8BDFE006BDC88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5068FABE1DC8BDFE006BDC88 /* ViewController.swift */; };
 		5068FAC21DC8BDFE006BDC88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5068FAC01DC8BDFE006BDC88 /* Main.storyboard */; };
 		5068FAC41DC8BDFE006BDC88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5068FAC31DC8BDFE006BDC88 /* Assets.xcassets */; };
 		5068FAC71DC8BDFE006BDC88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5068FAC51DC8BDFE006BDC88 /* LaunchScreen.storyboard */; };
 		5068FAD21DC8BDFE006BDC88 /* EyeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5068FAD11DC8BDFE006BDC88 /* EyeTests.swift */; };
 		5068FADD1DC8BDFE006BDC88 /* EyeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5068FADC1DC8BDFE006BDC88 /* EyeUITests.swift */; };
+		50C03A001DD17B9600186E95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C039FC1DD17B9200186E95 /* AppDelegate.swift */; };
+		50C03A041DD17D6C00186E95 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C03A031DD17D6C00186E95 /* MainViewController.swift */; };
+		50C03A071DD1802200186E95 /* Lobster 1.4.otf in Resources */ = {isa = PBXBuildFile; fileRef = 50C03A061DD1802200186E95 /* Lobster 1.4.otf */; };
+		50C03A0A1DD1803100186E95 /* FZLTXIHJW--GB1-0.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 50C03A081DD1803100186E95 /* FZLTXIHJW--GB1-0.TTF */; };
+		50C03A0B1DD1803100186E95 /* FZLTZCHJW--GB1-0.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 50C03A091DD1803100186E95 /* FZLTZCHJW--GB1-0.TTF */; };
 		76E3270690A21AAF7E756AE2 /* Pods_Eye.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4F7BB84290A2430AF2F1E6E /* Pods_Eye.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,8 +40,6 @@
 /* Begin PBXFileReference section */
 		3BB4255DAF465B465124463A /* Pods-Eye.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eye.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Eye/Pods-Eye.debug.xcconfig"; sourceTree = "<group>"; };
 		5068FAB91DC8BDFE006BDC88 /* Eye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eye.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5068FABC1DC8BDFE006BDC88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5068FABE1DC8BDFE006BDC88 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5068FAC11DC8BDFE006BDC88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5068FAC31DC8BDFE006BDC88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5068FAC61DC8BDFE006BDC88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +50,12 @@
 		5068FAD81DC8BDFE006BDC88 /* EyeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EyeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5068FADC1DC8BDFE006BDC88 /* EyeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyeUITests.swift; sourceTree = "<group>"; };
 		5068FADE1DC8BDFE006BDC88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50C039FC1DD17B9200186E95 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		50C03A031DD17D6C00186E95 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		50C03A061DD1802200186E95 /* Lobster 1.4.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lobster 1.4.otf"; sourceTree = "<group>"; };
+		50C03A081DD1803100186E95 /* FZLTXIHJW--GB1-0.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FZLTXIHJW--GB1-0.TTF"; sourceTree = "<group>"; };
+		50C03A091DD1803100186E95 /* FZLTZCHJW--GB1-0.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FZLTZCHJW--GB1-0.TTF"; sourceTree = "<group>"; };
+		50DEBCE31DD1F8010021718D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		565EB014AB20A035A7E6B8B8 /* Pods-Eye.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eye.release.xcconfig"; path = "Pods/Target Support Files/Pods-Eye/Pods-Eye.release.xcconfig"; sourceTree = "<group>"; };
 		F4F7BB84290A2430AF2F1E6E /* Pods_Eye.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Eye.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -104,9 +111,11 @@
 		5068FABB1DC8BDFE006BDC88 /* Eye */ = {
 			isa = PBXGroup;
 			children = (
-				5068FABC1DC8BDFE006BDC88 /* AppDelegate.swift */,
-				5068FABE1DC8BDFE006BDC88 /* ViewController.swift */,
-				5068FAC01DC8BDFE006BDC88 /* Main.storyboard */,
+				50C039FB1DD17B9200186E95 /* AppDelegate */,
+				50C039FD1DD17B9200186E95 /* Controllers */,
+				50C039FE1DD17B9200186E95 /* Models */,
+				50C039FF1DD17B9200186E95 /* Views */,
+				50C03A051DD17FDF00186E95 /* Resources */,
 				5068FAC31DC8BDFE006BDC88 /* Assets.xcassets */,
 				5068FAC51DC8BDFE006BDC88 /* LaunchScreen.storyboard */,
 				5068FAC81DC8BDFE006BDC88 /* Info.plist */,
@@ -132,6 +141,63 @@
 			path = EyeUITests;
 			sourceTree = "<group>";
 		};
+		50C039FB1DD17B9200186E95 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				50C039FC1DD17B9200186E95 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		50C039FD1DD17B9200186E95 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				50C03A011DD17BBF00186E95 /* Base */,
+				50C03A021DD17BBF00186E95 /* Main */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		50C039FE1DD17B9200186E95 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		50C039FF1DD17B9200186E95 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		50C03A011DD17BBF00186E95 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		50C03A021DD17BBF00186E95 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5068FAC01DC8BDFE006BDC88 /* Main.storyboard */,
+				50C03A031DD17D6C00186E95 /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		50C03A051DD17FDF00186E95 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				50C03A081DD1803100186E95 /* FZLTXIHJW--GB1-0.TTF */,
+				50C03A091DD1803100186E95 /* FZLTZCHJW--GB1-0.TTF */,
+				50C03A061DD1802200186E95 /* Lobster 1.4.otf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		D0B96B95AC8E02E4AB95BCDF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +210,7 @@
 		F74BDA40C8CF0D8395860A70 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				50DEBCE31DD1F8010021718D /* Foundation.framework */,
 				F4F7BB84290A2430AF2F1E6E /* Pods_Eye.framework */,
 			);
 			name = Frameworks;
@@ -260,9 +327,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50C03A071DD1802200186E95 /* Lobster 1.4.otf in Resources */,
 				5068FAC71DC8BDFE006BDC88 /* LaunchScreen.storyboard in Resources */,
 				5068FAC41DC8BDFE006BDC88 /* Assets.xcassets in Resources */,
 				5068FAC21DC8BDFE006BDC88 /* Main.storyboard in Resources */,
+				50C03A0A1DD1803100186E95 /* FZLTXIHJW--GB1-0.TTF in Resources */,
+				50C03A0B1DD1803100186E95 /* FZLTZCHJW--GB1-0.TTF in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,8 +405,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5068FABF1DC8BDFE006BDC88 /* ViewController.swift in Sources */,
-				5068FABD1DC8BDFE006BDC88 /* AppDelegate.swift in Sources */,
+				50C03A041DD17D6C00186E95 /* MainViewController.swift in Sources */,
+				50C03A001DD17B9600186E95 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +448,7 @@
 				5068FAC11DC8BDFE006BDC88 /* Base */,
 			);
 			name = Main.storyboard;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		5068FAC51DC8BDFE006BDC88 /* LaunchScreen.storyboard */ = {
