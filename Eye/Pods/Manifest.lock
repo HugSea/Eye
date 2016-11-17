@@ -1,12 +1,15 @@
 PODS:
   - Alamofire (4.0.1)
+  - IBAnimatable (3.0.1)
 
 DEPENDENCIES:
   - Alamofire (= 4.0.1)
+  - IBAnimatable
 
 SPEC CHECKSUMS:
   Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
+  IBAnimatable: 709f04a2b951c55db9ac4d8893684830bbdd0be2
 
-PODFILE CHECKSUM: 828b2f78fc15ad07725d73ee410594136a94cc6b
+PODFILE CHECKSUM: b820aa271d01a27e9441bfc6ea8209918aacdf66
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.2.0.beta.1
