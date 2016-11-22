@@ -3,6 +3,7 @@ platform :ios, '9.0'
 use_frameworks!
 
 target 'Eye' do
-	pod 'Alamofire', '4.0.1'
+    pod 'Alamofire', '4.0.1'
     pod 'IBAnimatable'
+    pod 'ObjectMapper'
 end

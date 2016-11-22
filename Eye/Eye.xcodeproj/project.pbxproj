@@ -17,6 +17,7 @@
 		50AAA3FD1DE2F090009F68B6 /* EYEBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AAA3FC1DE2F090009F68B6 /* EYEBaseViewController.swift */; };
 		50AAA4001DE2F0F3009F68B6 /* EYESelectedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AAA3FF1DE2F0F3009F68B6 /* EYESelectedViewController.swift */; };
 		50AAA4021DE2F561009F68B6 /* EYESelectedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AAA4011DE2F561009F68B6 /* EYESelectedModel.swift */; };
+		50AAA4071DE46345009F68B6 /* String+Eye.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AAA4061DE46345009F68B6 /* String+Eye.swift */; };
 		50BD4BBD1DDCA4DC00BB2BF0 /* EYELaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BD4BBC1DDCA4DC00BB2BF0 /* EYELaunchView.swift */; };
 		50BD4BBF1DDCA53500BB2BF0 /* EYELaunchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50BD4BBE1DDCA53500BB2BF0 /* EYELaunchView.xib */; };
 		50C03A001DD17B9600186E95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C039FC1DD17B9200186E95 /* AppDelegate.swift */; };
@@ -62,6 +63,7 @@
 		50AAA3FC1DE2F090009F68B6 /* EYEBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EYEBaseViewController.swift; sourceTree = "<group>"; };
 		50AAA3FF1DE2F0F3009F68B6 /* EYESelectedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EYESelectedViewController.swift; sourceTree = "<group>"; };
 		50AAA4011DE2F561009F68B6 /* EYESelectedModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EYESelectedModel.swift; sourceTree = "<group>"; };
+		50AAA4061DE46345009F68B6 /* String+Eye.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Eye.swift"; sourceTree = "<group>"; };
 		50BD4BBC1DDCA4DC00BB2BF0 /* EYELaunchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EYELaunchView.swift; sourceTree = "<group>"; };
 		50BD4BBE1DDCA53500BB2BF0 /* EYELaunchView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EYELaunchView.xib; sourceTree = "<group>"; };
 		50C039FC1DD17B9200186E95 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				50C039FE1DD17B9200186E95 /* Models */,
 				50BD4BBA1DDCA4CE00BB2BF0 /* Views */,
 				500631141DE206BC006FAE29 /* Constants */,
+				50AAA4031DE4624F009F68B6 /* Extensions */,
 				50C03A051DD17FDF00186E95 /* Resources */,
 				5068FAC31DC8BDFE006BDC88 /* Assets.xcassets */,
 				5068FAC51DC8BDFE006BDC88 /* LaunchScreen.storyboard */,
@@ -170,6 +173,14 @@
 				50AAA3FF1DE2F0F3009F68B6 /* EYESelectedViewController.swift */,
 			);
 			path = Selected;
+			sourceTree = "<group>";
+		};
+		50AAA4031DE4624F009F68B6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				50AAA4061DE46345009F68B6 /* String+Eye.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		50BD4BBA1DDCA4CE00BB2BF0 /* Views */ = {
@@ -332,7 +343,7 @@
 				TargetAttributes = {
 					5068FAB81DC8BDFE006BDC88 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 5AQGGJ35C4;
+						DevelopmentTeam = VRGS6G42JR;
 						ProvisioningStyle = Automatic;
 					};
 					5068FACC1DC8BDFE006BDC88 = {
@@ -452,6 +463,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50AAA4071DE46345009F68B6 /* String+Eye.swift in Sources */,
 				50C03A041DD17D6C00186E95 /* MainViewController.swift in Sources */,
 				50C03A001DD17B9600186E95 /* AppDelegate.swift in Sources */,
 				50AAA3FD1DE2F090009F68B6 /* EYEBaseViewController.swift in Sources */,
@@ -614,7 +626,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 5AQGGJ35C4;
+				DEVELOPMENT_TEAM = VRGS6G42JR;
 				INFOPLIST_FILE = Eye/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -632,7 +644,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 5AQGGJ35C4;
+				DEVELOPMENT_TEAM = VRGS6G42JR;
 				INFOPLIST_FILE = Eye/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
