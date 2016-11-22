@@ -7,29 +7,34 @@
 //
 
 import UIKit
+import Alamofire
+import ObjectMapper
 
 class EYESelectedViewController: EYEBaseViewController {
 
+    // MARK: --------------------- Life Cycle ---------------------
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        self.requestData()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    // MARK: --------------------- Private Methods ---------------------
+    private func requestData() {
+        let parameters = [
+            "f" : "iphone",
+            "p_product" : "EYEPETIZER_IOS",
+            "v" : "2.9.0",
+            "vc" : "1604"
+        ]
+        Alamofire.request(EYEConstantURL.URL_Selected, method: .get, parameters: parameters).responseJSON { response in
+            if let value = response.result.value {
+                let sectionList = Mapper<EYESelectedModel>().map(JSONObject: value)
+                let sectionModel = sectionList?.sectionList?[0]
+                let itemModel = sectionModel?.itemList?[0]
+                print(itemModel?.actionUrl)
+            }
+        }
     }
-    */
 
 }

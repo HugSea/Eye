@@ -73,6 +73,11 @@ struct ItemModel: Mappable {
 
     // VideoCollection
     var cover: String?
+    
+    // Banner
+    var image: String?
+    var clickUrl: String?
+    var actionUrl: String?
 
     var id : Int?
     // 标题
@@ -116,6 +121,9 @@ struct ItemModel: Mappable {
         text            <- map["data.text"]
         font            <- map["data.font"]
         cover           <- map["data.header.cover"]
+        image           <- map["data.image"]
+        actionUrl       <- map["data.actionUrl"]
+        clickUrl        <- map["data.adTrack.0.clickUrl"]
         id              <- map["data.id"]
         title           <- map["data.title"]
         description     <- map["data.description"]
