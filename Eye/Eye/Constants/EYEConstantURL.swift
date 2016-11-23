@@ -21,4 +21,7 @@ struct EYEConstantURL {
     // 参数：1._s=13272bd517e3792eef21d69898b58439 *2.f=iphone 3.net=wifi *4.p_product=EYEPETIZER_IOS 5.u=f10f96912f453ec07a90ede621e53e37bccb016e *6.v=2.9.0 *7.vc=1604
     static let URL_Author = URL_Base_V3 + "tabs/pcgs"
 
+    // TableViewCell高度
+    static let TableViewCellHeight_VideoBeanForClient = 214.0
+
 }

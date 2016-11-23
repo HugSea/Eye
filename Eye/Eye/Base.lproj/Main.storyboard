@@ -16,7 +16,18 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2Z2-qL-QlL">
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="2Z2-qL-QlL" secondAttribute="trailing" id="DSA-Gu-yau"/>
+                            <constraint firstItem="2Z2-qL-QlL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ZTu-hC-nR2"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2Z2-qL-QlL" secondAttribute="bottom" id="pbI-EU-0G1"/>
+                            <constraint firstItem="2Z2-qL-QlL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="rmL-Ng-mA5"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Lcl-Uf-fp5"/>
                 </viewController>
