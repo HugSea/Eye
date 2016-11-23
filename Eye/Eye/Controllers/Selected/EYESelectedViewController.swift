@@ -26,8 +26,9 @@ class EYESelectedViewController: EYEBaseViewController {
 
     // MARK: --------------------- Private Methods ---------------------
     private func setupUI() {
-        // 注册VideoBeanForClientCell
+        // 注册TableViewCell
         tableView.register(UINib(nibName: EYEVideoBeanForClientTableViewCell.className, bundle: nil), forCellReuseIdentifier: EYEVideoBeanForClientTableViewCell.className)
+        tableView.register(UINib(nibName: EYETextHeaderTableViewCell.className, bundle: nil), forCellReuseIdentifier: EYETextHeaderTableViewCell.className)
 
         tableView.dataSource = self
         tableView.delegate = self
@@ -75,9 +76,17 @@ extension EYESelectedViewController: UITableViewDataSource, UITableViewDelegate 
 
         switch sectionModel.type {
         case "feedSection":
-            let cell = tableView.dequeueReusableCell(withIdentifier: EYEVideoBeanForClientTableViewCell.className) as! EYEVideoBeanForClientTableViewCell
-            cell.itemModel = itemModel;
-            return cell
+            if itemModel.type == "video" {
+                let cell = tableView.dequeueReusableCell(withIdentifier: EYEVideoBeanForClientTableViewCell.className) as! EYEVideoBeanForClientTableViewCell
+                cell.itemModel = itemModel;
+                return cell
+            } else if itemModel.type == "textHeader" {
+                let cell = tableView.dequeueReusableCell(withIdentifier: EYETextHeaderTableViewCell.className) as! EYETextHeaderTableViewCell
+                cell.title = itemModel.text
+                return cell
+            } else {
+                return UITableViewCell()
+            }
         default:
             return UITableViewCell()
         }
@@ -91,6 +100,8 @@ extension EYESelectedViewController: UITableViewDataSource, UITableViewDelegate 
         switch itemModel.type {
         case "video":
             return EYEConstant.TableViewCellHeight_VideoBeanForClient
+        case "textHeader":
+            return EYEConstant.TableViewCellHeight_TextHeader
         default:
             return 0
         }

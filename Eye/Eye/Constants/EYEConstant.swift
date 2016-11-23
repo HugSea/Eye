@@ -11,5 +11,8 @@ import UIKit
 
 struct EYEConstant {
     // TableViewCell高度
+    // type = "video"
     static let TableViewCellHeight_VideoBeanForClient: CGFloat = 214.0
+    // type = "textHeader"
+    static let TableViewCellHeight_TextHeader: CGFloat = 50.0
 }

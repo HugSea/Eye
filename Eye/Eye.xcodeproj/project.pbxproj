@@ -18,6 +18,8 @@
 		50AAA4001DE2F0F3009F68B6 /* EYESelectedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AAA3FF1DE2F0F3009F68B6 /* EYESelectedViewController.swift */; };
 		50AAA4021DE2F561009F68B6 /* EYESelectedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AAA4011DE2F561009F68B6 /* EYESelectedModel.swift */; };
 		50AAA4071DE46345009F68B6 /* String+Eye.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AAA4061DE46345009F68B6 /* String+Eye.swift */; };
+		50B4EABC1DE5F4E20052352A /* EYETextHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B4EABA1DE5F4E20052352A /* EYETextHeaderTableViewCell.swift */; };
+		50B4EABD1DE5F4E20052352A /* EYETextHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50B4EABB1DE5F4E20052352A /* EYETextHeaderTableViewCell.xib */; };
 		50BD4BBD1DDCA4DC00BB2BF0 /* EYELaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BD4BBC1DDCA4DC00BB2BF0 /* EYELaunchView.swift */; };
 		50BD4BBF1DDCA53500BB2BF0 /* EYELaunchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50BD4BBE1DDCA53500BB2BF0 /* EYELaunchView.xib */; };
 		50C03A001DD17B9600186E95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C039FC1DD17B9200186E95 /* AppDelegate.swift */; };
@@ -70,6 +72,8 @@
 		50AAA3FF1DE2F0F3009F68B6 /* EYESelectedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EYESelectedViewController.swift; sourceTree = "<group>"; };
 		50AAA4011DE2F561009F68B6 /* EYESelectedModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EYESelectedModel.swift; sourceTree = "<group>"; };
 		50AAA4061DE46345009F68B6 /* String+Eye.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Eye.swift"; sourceTree = "<group>"; };
+		50B4EABA1DE5F4E20052352A /* EYETextHeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EYETextHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		50B4EABB1DE5F4E20052352A /* EYETextHeaderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EYETextHeaderTableViewCell.xib; sourceTree = "<group>"; };
 		50BD4BBC1DDCA4DC00BB2BF0 /* EYELaunchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EYELaunchView.swift; sourceTree = "<group>"; };
 		50BD4BBE1DDCA53500BB2BF0 /* EYELaunchView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EYELaunchView.xib; sourceTree = "<group>"; };
 		50C039FC1DD17B9200186E95 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -276,6 +280,8 @@
 			children = (
 				50DACCD91DE5763400311A8E /* EYEVideoBeanForClientTableViewCell.swift */,
 				50DACCDA1DE5763400311A8E /* EYEVideoBeanForClientTableViewCell.xib */,
+				50B4EABA1DE5F4E20052352A /* EYETextHeaderTableViewCell.swift */,
+				50B4EABB1DE5F4E20052352A /* EYETextHeaderTableViewCell.xib */,
 			);
 			path = Selected;
 			sourceTree = "<group>";
@@ -416,6 +422,7 @@
 				5068FAC21DC8BDFE006BDC88 /* Main.storyboard in Resources */,
 				50105CCC1DD37A5800620FE3 /* Splash_BKG.jpg in Resources */,
 				50C03A0A1DD1803100186E95 /* FZLTXIHJW--GB1-0.TTF in Resources */,
+				50B4EABD1DE5F4E20052352A /* EYETextHeaderTableViewCell.xib in Resources */,
 				50C03A0B1DD1803100186E95 /* FZLTZCHJW--GB1-0.TTF in Resources */,
 				50DACCDC1DE5763400311A8E /* EYEVideoBeanForClientTableViewCell.xib in Resources */,
 			);
@@ -496,6 +503,7 @@
 				50DACCE21DE5A3DF00311A8E /* NSObject+Eye.swift in Sources */,
 				50AAA3FD1DE2F090009F68B6 /* EYEBaseViewController.swift in Sources */,
 				50DACCDB1DE5763400311A8E /* EYEVideoBeanForClientTableViewCell.swift in Sources */,
+				50B4EABC1DE5F4E20052352A /* EYETextHeaderTableViewCell.swift in Sources */,
 				50BD4BBD1DDCA4DC00BB2BF0 /* EYELaunchView.swift in Sources */,
 				50DACCD31DE56F2E00311A8E /* UIFont+Eye.swift in Sources */,
 				50DACCD71DE5728B00311A8E /* UIView+Frame.swift in Sources */,
