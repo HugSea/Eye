@@ -10,7 +10,7 @@ import UIKit
 import Alamofire
 import ObjectMapper
 
-class EYESelectedViewController: EYEBaseViewController, UITableViewDataSource, UITableViewDelegate {
+class EYESelectedViewController: EYEBaseViewController {
 
     @IBOutlet weak var tableView: UITableView!
 
@@ -20,14 +20,46 @@ class EYESelectedViewController: EYEBaseViewController, UITableViewDataSource, U
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.setupUI()
-        self.requestData()
+        setupUI()
+        requestData()
     }
 
-    // MARK: --------------------- TableViewDataSource / Delegate ---------------------
+    // MARK: --------------------- Private Methods ---------------------
+    private func setupUI() {
+        // 注册VideoBeanForClientCell
+        tableView.register(UINib(nibName: EYEVideoBeanForClientTableViewCell.className, bundle: nil), forCellReuseIdentifier: EYEVideoBeanForClientTableViewCell.className)
+
+        tableView.dataSource = self
+        tableView.delegate = self
+        tableView.tableFooterView = UIView()
+    }
+
+    private func requestData() {
+        let parameters = [
+            "f" : "iphone",
+            "p_product" : "EYEPETIZER_IOS",
+            "v" : "2.9.0",
+            "vc" : "1604"
+        ]
+        Alamofire.request(EYEURL.URL_Selected, method: .get, parameters: parameters).responseJSON { response in
+            if let value = response.result.value {
+                let sectionList = Mapper<EYESelectedModel>().map(JSONObject: value)
+                self.sectionList = (sectionList?.sectionList)!
+                self.tableView.reloadData()
+            }
+        }
+    }
+
+    // MARK: --------------------- Getters and Setters ---------------------
+
+}
+
+// MARK: --------------------- TableViewDataSource / Delegate ---------------------
+
+extension EYESelectedViewController: UITableViewDataSource, UITableViewDelegate {
 
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1 //sectionList.count
+        return sectionList.count > 0 ? 1 : 0;
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -41,40 +73,26 @@ class EYESelectedViewController: EYEBaseViewController, UITableViewDataSource, U
         let sectionModel = sectionList[indexPath.section]
         let itemModel: ItemModel = sectionModel.itemList![indexPath.row]
 
-        var cell = UITableViewCell()
         switch sectionModel.type {
         case "feedSection":
-            cell = tableView.dequeueReusableCell(withIdentifier: NSStringFromClass(EYEVideoBeanForClientTableViewCell.self)) as! EYEVideoBeanForClientTableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: EYEVideoBeanForClientTableViewCell.className) as! EYEVideoBeanForClientTableViewCell
+            cell.itemModel = itemModel;
             return cell
         default:
-            break
-        }
-        return cell
-    }
-    
-    // MARK: --------------------- Private Methods ---------------------
-    private func setupUI() {
-        // 注册VideoBeanForClientCell
-        self.tableView.register(UINib.init(nibName: NSStringFromClass(EYEVideoBeanForClientTableViewCell.self), bundle: nil), forCellReuseIdentifier: NSStringFromClass(EYEVideoBeanForClientTableViewCell.self))
-    }
-
-    private func requestData() {
-        let parameters = [
-            "f" : "iphone",
-            "p_product" : "EYEPETIZER_IOS",
-            "v" : "2.9.0",
-            "vc" : "1604"
-        ]
-        Alamofire.request(EYEConstantURL.URL_Selected, method: .get, parameters: parameters).responseJSON { response in
-            if let value = response.result.value {
-                let sectionList = Mapper<EYESelectedModel>().map(JSONObject: value)
-                self.sectionList = (sectionList?.sectionList)!
-            }
+            return UITableViewCell()
         }
     }
 
-    // MARK: --------------------- Getters and Setters ---------------------
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        // 获取模型
+        let sectionModel = sectionList[indexPath.section]
+        let itemModel: ItemModel = sectionModel.itemList![indexPath.row]
 
-    
-
+        switch itemModel.type {
+        case "video":
+            return EYEConstant.TableViewCellHeight_VideoBeanForClient
+        default:
+            return 0
+        }
+    }
 }

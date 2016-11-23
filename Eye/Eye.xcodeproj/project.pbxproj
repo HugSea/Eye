@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		500631161DE206DE006FAE29 /* EYEConstantURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500631151DE206DE006FAE29 /* EYEConstantURL.swift */; };
+		500631161DE206DE006FAE29 /* EYEURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500631151DE206DE006FAE29 /* EYEURL.swift */; };
 		50105CCC1DD37A5800620FE3 /* Splash_BKG.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50105CCB1DD37A5800620FE3 /* Splash_BKG.jpg */; };
 		5068FAC21DC8BDFE006BDC88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5068FAC01DC8BDFE006BDC88 /* Main.storyboard */; };
 		5068FAC41DC8BDFE006BDC88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5068FAC31DC8BDFE006BDC88 /* Assets.xcassets */; };
@@ -21,7 +21,7 @@
 		50BD4BBD1DDCA4DC00BB2BF0 /* EYELaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BD4BBC1DDCA4DC00BB2BF0 /* EYELaunchView.swift */; };
 		50BD4BBF1DDCA53500BB2BF0 /* EYELaunchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50BD4BBE1DDCA53500BB2BF0 /* EYELaunchView.xib */; };
 		50C03A001DD17B9600186E95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C039FC1DD17B9200186E95 /* AppDelegate.swift */; };
-		50C03A041DD17D6C00186E95 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C03A031DD17D6C00186E95 /* MainViewController.swift */; };
+		50C03A041DD17D6C00186E95 /* EYEMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C03A031DD17D6C00186E95 /* EYEMainViewController.swift */; };
 		50C03A071DD1802200186E95 /* Lobster 1.4.otf in Resources */ = {isa = PBXBuildFile; fileRef = 50C03A061DD1802200186E95 /* Lobster 1.4.otf */; };
 		50C03A0A1DD1803100186E95 /* FZLTXIHJW--GB1-0.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 50C03A081DD1803100186E95 /* FZLTXIHJW--GB1-0.TTF */; };
 		50C03A0B1DD1803100186E95 /* FZLTZCHJW--GB1-0.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 50C03A091DD1803100186E95 /* FZLTZCHJW--GB1-0.TTF */; };
@@ -29,6 +29,8 @@
 		50DACCD71DE5728B00311A8E /* UIView+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DACCD61DE5728B00311A8E /* UIView+Frame.swift */; };
 		50DACCDB1DE5763400311A8E /* EYEVideoBeanForClientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DACCD91DE5763400311A8E /* EYEVideoBeanForClientTableViewCell.swift */; };
 		50DACCDC1DE5763400311A8E /* EYEVideoBeanForClientTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50DACCDA1DE5763400311A8E /* EYEVideoBeanForClientTableViewCell.xib */; };
+		50DACCE01DE59DC300311A8E /* EYEConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DACCDF1DE59DC300311A8E /* EYEConstant.swift */; };
+		50DACCE21DE5A3DF00311A8E /* NSObject+Eye.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DACCE11DE5A3DF00311A8E /* NSObject+Eye.swift */; };
 		76E3270690A21AAF7E756AE2 /* Pods_Eye.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4F7BB84290A2430AF2F1E6E /* Pods_Eye.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,7 +53,7 @@
 
 /* Begin PBXFileReference section */
 		3BB4255DAF465B465124463A /* Pods-Eye.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eye.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Eye/Pods-Eye.debug.xcconfig"; sourceTree = "<group>"; };
-		500631151DE206DE006FAE29 /* EYEConstantURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EYEConstantURL.swift; sourceTree = "<group>"; };
+		500631151DE206DE006FAE29 /* EYEURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EYEURL.swift; sourceTree = "<group>"; };
 		50105CCB1DD37A5800620FE3 /* Splash_BKG.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Splash_BKG.jpg; sourceTree = "<group>"; };
 		5068FAB91DC8BDFE006BDC88 /* Eye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5068FAC11DC8BDFE006BDC88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -71,7 +73,7 @@
 		50BD4BBC1DDCA4DC00BB2BF0 /* EYELaunchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EYELaunchView.swift; sourceTree = "<group>"; };
 		50BD4BBE1DDCA53500BB2BF0 /* EYELaunchView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EYELaunchView.xib; sourceTree = "<group>"; };
 		50C039FC1DD17B9200186E95 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		50C03A031DD17D6C00186E95 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		50C03A031DD17D6C00186E95 /* EYEMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EYEMainViewController.swift; sourceTree = "<group>"; };
 		50C03A061DD1802200186E95 /* Lobster 1.4.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lobster 1.4.otf"; sourceTree = "<group>"; };
 		50C03A081DD1803100186E95 /* FZLTXIHJW--GB1-0.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FZLTXIHJW--GB1-0.TTF"; sourceTree = "<group>"; };
 		50C03A091DD1803100186E95 /* FZLTZCHJW--GB1-0.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FZLTZCHJW--GB1-0.TTF"; sourceTree = "<group>"; };
@@ -79,6 +81,8 @@
 		50DACCD61DE5728B00311A8E /* UIView+Frame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Frame.swift"; sourceTree = "<group>"; };
 		50DACCD91DE5763400311A8E /* EYEVideoBeanForClientTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EYEVideoBeanForClientTableViewCell.swift; sourceTree = "<group>"; };
 		50DACCDA1DE5763400311A8E /* EYEVideoBeanForClientTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EYEVideoBeanForClientTableViewCell.xib; sourceTree = "<group>"; };
+		50DACCDF1DE59DC300311A8E /* EYEConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EYEConstant.swift; sourceTree = "<group>"; };
+		50DACCE11DE5A3DF00311A8E /* NSObject+Eye.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Eye.swift"; sourceTree = "<group>"; };
 		50DEBCE31DD1F8010021718D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		565EB014AB20A035A7E6B8B8 /* Pods-Eye.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eye.release.xcconfig"; path = "Pods/Target Support Files/Pods-Eye/Pods-Eye.release.xcconfig"; sourceTree = "<group>"; };
 		F4F7BB84290A2430AF2F1E6E /* Pods_Eye.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Eye.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,7 +117,8 @@
 		500631141DE206BC006FAE29 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
-				500631151DE206DE006FAE29 /* EYEConstantURL.swift */,
+				500631151DE206DE006FAE29 /* EYEURL.swift */,
+				50DACCDF1DE59DC300311A8E /* EYEConstant.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -189,6 +194,7 @@
 				50AAA4061DE46345009F68B6 /* String+Eye.swift */,
 				50DACCD21DE56F2E00311A8E /* UIFont+Eye.swift */,
 				50DACCD61DE5728B00311A8E /* UIView+Frame.swift */,
+				50DACCE11DE5A3DF00311A8E /* NSObject+Eye.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -249,7 +255,7 @@
 			isa = PBXGroup;
 			children = (
 				5068FAC01DC8BDFE006BDC88 /* Main.storyboard */,
-				50C03A031DD17D6C00186E95 /* MainViewController.swift */,
+				50C03A031DD17D6C00186E95 /* EYEMainViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -485,15 +491,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				50AAA4071DE46345009F68B6 /* String+Eye.swift in Sources */,
-				50C03A041DD17D6C00186E95 /* MainViewController.swift in Sources */,
+				50C03A041DD17D6C00186E95 /* EYEMainViewController.swift in Sources */,
 				50C03A001DD17B9600186E95 /* AppDelegate.swift in Sources */,
+				50DACCE21DE5A3DF00311A8E /* NSObject+Eye.swift in Sources */,
 				50AAA3FD1DE2F090009F68B6 /* EYEBaseViewController.swift in Sources */,
 				50DACCDB1DE5763400311A8E /* EYEVideoBeanForClientTableViewCell.swift in Sources */,
 				50BD4BBD1DDCA4DC00BB2BF0 /* EYELaunchView.swift in Sources */,
 				50DACCD31DE56F2E00311A8E /* UIFont+Eye.swift in Sources */,
 				50DACCD71DE5728B00311A8E /* UIView+Frame.swift in Sources */,
 				50AAA4021DE2F561009F68B6 /* EYESelectedModel.swift in Sources */,
-				500631161DE206DE006FAE29 /* EYEConstantURL.swift in Sources */,
+				50DACCE01DE59DC300311A8E /* EYEConstant.swift in Sources */,
+				500631161DE206DE006FAE29 /* EYEURL.swift in Sources */,
 				50AAA4001DE2F0F3009F68B6 /* EYESelectedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

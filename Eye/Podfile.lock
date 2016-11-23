@@ -2,17 +2,22 @@ PODS:
   - Alamofire (4.0.1)
   - IBAnimatable (3.0.1)
   - ObjectMapper (2.2.0)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
 
 DEPENDENCIES:
   - Alamofire (= 4.0.1)
   - IBAnimatable
   - ObjectMapper
+  - SDWebImage
 
 SPEC CHECKSUMS:
   Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
   IBAnimatable: 709f04a2b951c55db9ac4d8893684830bbdd0be2
   ObjectMapper: 4060d739febae11ab0c6af8d786f98667c82e1bd
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
 
-PODFILE CHECKSUM: b145f29caf4bb95f64e2855fac04cf24d65211d6
+PODFILE CHECKSUM: 6947943735ecc9e56a0db0eaaf5925a21151c0ec
 
 COCOAPODS: 1.1.1

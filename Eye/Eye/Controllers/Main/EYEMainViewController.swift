@@ -1,5 +1,5 @@
 //
-//  MainViewController.swift
+//  EYEMainViewController.swift
 //  Eye
 //
 //  Created by Jack on 16/11/8.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainViewController: UITabBarController {
+class EYEMainViewController: UITabBarController {
 
     // MARK: --------------------- Life Cycle ---------------------
     override func viewDidLoad() {

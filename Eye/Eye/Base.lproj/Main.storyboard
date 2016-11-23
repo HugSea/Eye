@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2Z2-qL-QlL">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2Z2-qL-QlL">
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -25,11 +25,14 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="2Z2-qL-QlL" secondAttribute="trailing" id="DSA-Gu-yau"/>
                             <constraint firstItem="2Z2-qL-QlL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ZTu-hC-nR2"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2Z2-qL-QlL" secondAttribute="bottom" id="pbI-EU-0G1"/>
-                            <constraint firstItem="2Z2-qL-QlL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="rmL-Ng-mA5"/>
+                            <constraint firstAttribute="bottom" secondItem="2Z2-qL-QlL" secondAttribute="bottom" id="aZD-tG-Wqa"/>
+                            <constraint firstItem="2Z2-qL-QlL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="wxL-O2-dI2"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Lcl-Uf-fp5"/>
+                    <connections>
+                        <outlet property="tableView" destination="2Z2-qL-QlL" id="cY5-l9-dh6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -38,7 +41,7 @@
         <!--Main View Controller-->
         <scene sceneID="3Ee-Rb-8Eq">
             <objects>
-                <tabBarController storyboardIdentifier="MainStoryboard" automaticallyAdjustsScrollViewInsets="NO" id="eCD-of-PjM" customClass="MainViewController" customModule="Eye" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="MainStoryboard" automaticallyAdjustsScrollViewInsets="NO" id="eCD-of-PjM" customClass="EYEMainViewController" customModule="Eye" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="zFJ-Vv-qH8">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
@@ -64,6 +67,8 @@
                         <inset key="imageInsets" minX="0.0" minY="4" maxX="0.0" maxY="-4"/>
                     </tabBarItem>
                     <toolbarItems/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="2E4-BP-hMb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -90,7 +95,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZIH-Cn-Hft" id="OlY-uB-wX9">
-                                    <frame key="frameInset" width="375" height="43.5"/>
+                                    <frame key="frameInset" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -113,6 +118,8 @@
                     <tabBarItem key="tabBarItem" title="" image="ic_tab_2" selectedImage="ic_tab_2_selected" id="Qps-tc-7h7">
                         <inset key="imageInsets" minX="0.0" minY="4" maxX="0.0" maxY="-4"/>
                     </tabBarItem>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="eL5-92-Pu7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -138,7 +145,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="G8E-qs-hM0" id="cXP-tr-ksc">
-                                    <frame key="frameInset" width="375" height="43.5"/>
+                                    <frame key="frameInset" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -161,6 +168,8 @@
                     <tabBarItem key="tabBarItem" title="" image="ic_tab_3" selectedImage="ic_tab_3_selected" id="PGt-LX-h11">
                         <inset key="imageInsets" minX="0.0" minY="4" maxX="0.0" maxY="-4"/>
                     </tabBarItem>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="mPT-Hg-13P">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -186,7 +195,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="C9r-Ag-qga" id="BEi-I2-AYJ">
-                                    <frame key="frameInset" width="375" height="43.5"/>
+                                    <frame key="frameInset" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -209,6 +218,8 @@
                     <tabBarItem key="tabBarItem" title="" image="ic_tab_4" selectedImage="ic_tab_4_selected" id="024-U4-PFt">
                         <inset key="imageInsets" minX="0.0" minY="4" maxX="0.0" maxY="-4"/>
                     </tabBarItem>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5Uq-3Y-Bxb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

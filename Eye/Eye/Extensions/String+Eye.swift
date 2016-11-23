@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 extension Int {
-    func durationToTime(duration: Int) -> String {
-        return "\(String(format: "%02d", duration / 60))' \(String(format: "%2d", duration % 60))\""
+    static func durationToTime(_ duration: Int) -> String {
+        return "\(String(format: "%02d", duration / 60))' \(String(format: "%02d", duration % 60))\""
     }
 }
