@@ -6,5 +6,5 @@ target 'Eye' do
     pod 'Alamofire', '4.0.1'
     pod 'IBAnimatable'
     pod 'ObjectMapper'
-    pod 'SDWebImage'
+    pod 'Kingfisher'
 end

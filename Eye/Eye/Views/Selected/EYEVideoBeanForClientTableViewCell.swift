@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import SDWebImage
+import Kingfisher
 
 class EYEVideoBeanForClientTableViewCell: UITableViewCell {
 
@@ -25,7 +25,7 @@ class EYEVideoBeanForClientTableViewCell: UITableViewCell {
 
     var itemModel: ItemModel! {
         didSet {
-            bgImageView.sd_setImage(with: URL(string: itemModel.feed!))
+            bgImageView.kf.setImage(with: URL(string: itemModel.feed!))
             titleLabel.text = itemModel.title
             subTitleLabel.text = itemModel.subTitle
         }
