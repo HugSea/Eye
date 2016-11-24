@@ -45,7 +45,7 @@ struct SectionModel: Mappable {
     // 数量
     var count: Int!
     // Footer
-    var footer: FooterModel?
+    var footer: FooterModel!
 
     init?(map: Map) {
 
@@ -140,7 +140,7 @@ struct ItemModel: Mappable {
 
 struct FooterModel: Mappable {
     // 类型
-    var type: String?
+    var type: String!
     // 内容
     var text: String?
     // 字体

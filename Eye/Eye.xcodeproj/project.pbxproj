@@ -27,6 +27,8 @@
 		50C03A071DD1802200186E95 /* Lobster 1.4.otf in Resources */ = {isa = PBXBuildFile; fileRef = 50C03A061DD1802200186E95 /* Lobster 1.4.otf */; };
 		50C03A0A1DD1803100186E95 /* FZLTXIHJW--GB1-0.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 50C03A081DD1803100186E95 /* FZLTXIHJW--GB1-0.TTF */; };
 		50C03A0B1DD1803100186E95 /* FZLTZCHJW--GB1-0.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 50C03A091DD1803100186E95 /* FZLTZCHJW--GB1-0.TTF */; };
+		50CD19A41DE705C4007D068A /* EYESelectedFooterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CD19A21DE705C4007D068A /* EYESelectedFooterTableViewCell.swift */; };
+		50CD19A51DE705C4007D068A /* EYESelectedFooterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50CD19A31DE705C4007D068A /* EYESelectedFooterTableViewCell.xib */; };
 		50DACCD31DE56F2E00311A8E /* UIFont+Eye.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DACCD21DE56F2E00311A8E /* UIFont+Eye.swift */; };
 		50DACCD71DE5728B00311A8E /* UIView+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DACCD61DE5728B00311A8E /* UIView+Frame.swift */; };
 		50DACCDB1DE5763400311A8E /* EYEVideoBeanForClientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DACCD91DE5763400311A8E /* EYEVideoBeanForClientTableViewCell.swift */; };
@@ -81,6 +83,8 @@
 		50C03A061DD1802200186E95 /* Lobster 1.4.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lobster 1.4.otf"; sourceTree = "<group>"; };
 		50C03A081DD1803100186E95 /* FZLTXIHJW--GB1-0.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FZLTXIHJW--GB1-0.TTF"; sourceTree = "<group>"; };
 		50C03A091DD1803100186E95 /* FZLTZCHJW--GB1-0.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FZLTZCHJW--GB1-0.TTF"; sourceTree = "<group>"; };
+		50CD19A21DE705C4007D068A /* EYESelectedFooterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EYESelectedFooterTableViewCell.swift; sourceTree = "<group>"; };
+		50CD19A31DE705C4007D068A /* EYESelectedFooterTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EYESelectedFooterTableViewCell.xib; sourceTree = "<group>"; };
 		50DACCD21DE56F2E00311A8E /* UIFont+Eye.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Eye.swift"; sourceTree = "<group>"; };
 		50DACCD61DE5728B00311A8E /* UIView+Frame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Frame.swift"; sourceTree = "<group>"; };
 		50DACCD91DE5763400311A8E /* EYEVideoBeanForClientTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EYEVideoBeanForClientTableViewCell.swift; sourceTree = "<group>"; };
@@ -282,6 +286,8 @@
 				50DACCDA1DE5763400311A8E /* EYEVideoBeanForClientTableViewCell.xib */,
 				50B4EABA1DE5F4E20052352A /* EYETextHeaderTableViewCell.swift */,
 				50B4EABB1DE5F4E20052352A /* EYETextHeaderTableViewCell.xib */,
+				50CD19A21DE705C4007D068A /* EYESelectedFooterTableViewCell.swift */,
+				50CD19A31DE705C4007D068A /* EYESelectedFooterTableViewCell.xib */,
 			);
 			path = Selected;
 			sourceTree = "<group>";
@@ -416,6 +422,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				50C03A071DD1802200186E95 /* Lobster 1.4.otf in Resources */,
+				50CD19A51DE705C4007D068A /* EYESelectedFooterTableViewCell.xib in Resources */,
 				5068FAC71DC8BDFE006BDC88 /* LaunchScreen.storyboard in Resources */,
 				5068FAC41DC8BDFE006BDC88 /* Assets.xcassets in Resources */,
 				50BD4BBF1DDCA53500BB2BF0 /* EYELaunchView.xib in Resources */,
@@ -509,6 +516,7 @@
 				50DACCD71DE5728B00311A8E /* UIView+Frame.swift in Sources */,
 				50AAA4021DE2F561009F68B6 /* EYESelectedModel.swift in Sources */,
 				50DACCE01DE59DC300311A8E /* EYEConstant.swift in Sources */,
+				50CD19A41DE705C4007D068A /* EYESelectedFooterTableViewCell.swift in Sources */,
 				500631161DE206DE006FAE29 /* EYEURL.swift in Sources */,
 				50AAA4001DE2F0F3009F68B6 /* EYESelectedViewController.swift in Sources */,
 			);

@@ -29,6 +29,7 @@ class EYESelectedViewController: EYEBaseViewController {
         // 注册TableViewCell
         tableView.register(UINib(nibName: EYEVideoBeanForClientTableViewCell.className, bundle: nil), forCellReuseIdentifier: EYEVideoBeanForClientTableViewCell.className)
         tableView.register(UINib(nibName: EYETextHeaderTableViewCell.className, bundle: nil), forCellReuseIdentifier: EYETextHeaderTableViewCell.className)
+        tableView.register(UINib(nibName: EYESelectedFooterTableViewCell.className, bundle: nil), forCellReuseIdentifier: EYESelectedFooterTableViewCell.className)
 
         tableView.dataSource = self
         tableView.delegate = self
@@ -65,15 +66,33 @@ extension EYESelectedViewController: UITableViewDataSource, UITableViewDelegate 
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         let sectionModel = sectionList[section]
-        let itemList = sectionModel.itemList
-        return (itemList?.count)!
+        let itemList = sectionModel.itemList!
+        return itemList.count + 1
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // 获取模型
         let sectionModel = sectionList[indexPath.section]
-        let itemModel: ItemModel = sectionModel.itemList![indexPath.row]
 
+        // Footer
+        if indexPath.row == (sectionModel.itemList?.count)! {
+            let footerModel: FooterModel = sectionModel.footer
+            switch footerModel.type {
+            case "forwardFooter":
+                let cell = tableView.dequeueReusableCell(withIdentifier: EYESelectedFooterTableViewCell.className) as! EYESelectedFooterTableViewCell
+                cell.contentViewHeightConstraint.constant = 60.0
+                cell.content = footerModel.text
+                return cell
+            case "blankFooter":
+                let cell = tableView.dequeueReusableCell(withIdentifier: EYESelectedFooterTableViewCell.className) as! EYESelectedFooterTableViewCell
+                cell.contentViewHeightConstraint.constant = 0
+                return cell
+            default:
+                return UITableViewCell()
+            }
+        }
+
+        let itemModel: ItemModel = sectionModel.itemList![indexPath.row]
         switch sectionModel.type {
         case "feedSection":
             if itemModel.type == "video" {
@@ -95,8 +114,21 @@ extension EYESelectedViewController: UITableViewDataSource, UITableViewDelegate 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         // 获取模型
         let sectionModel = sectionList[indexPath.section]
-        let itemModel: ItemModel = sectionModel.itemList![indexPath.row]
 
+        // Footer
+        if indexPath.row == (sectionModel.itemList?.count)! {
+            let footer: FooterModel = sectionModel.footer
+            switch footer.type {
+            case "forwardFooter":
+                return EYEConstant.TableViewCellHeight_ForwardFooter
+            case "blankFooter":
+                return EYEConstant.TableViewCellHeight_BlankFooter
+            default:
+                return 0
+            }
+        }
+
+        let itemModel: ItemModel = sectionModel.itemList![indexPath.row]
         switch itemModel.type {
         case "video":
             return EYEConstant.TableViewCellHeight_VideoBeanForClient
