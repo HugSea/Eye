@@ -12,6 +12,7 @@ class EYESelectedFooterTableViewCell: UITableViewCell {
 
     @IBOutlet weak var contentLabel: UILabel!
     @IBOutlet weak var contentViewHeightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var arrowView: UIImageView!
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,6 +23,11 @@ class EYESelectedFooterTableViewCell: UITableViewCell {
         didSet {
             contentLabel.text = content
         }
+    }
+
+    func isShowSubviews(_ isShow: Bool) {
+        contentLabel.isHidden = !isShow
+        arrowView.isHidden = !isShow
     }
     
 }

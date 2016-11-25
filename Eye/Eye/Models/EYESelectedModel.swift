@@ -77,7 +77,7 @@ struct ItemModel: Mappable {
     // Banner
     var image: String?
     var clickUrl: String?
-    var actionUrl: String?
+    var actionUrl: String?  // eyepetizer://webview/?title=它们值得温柔相待，小动物大营救&url=http://www.eyepetizer.net/videos_article.html?nid=89&shareable=true
 
     var id : Int?
     // 标题
@@ -111,6 +111,9 @@ struct ItemModel: Mappable {
     // 评论数
     var replyCount: Int?
 
+    // ItemCollection
+    var itemList: [ItemModel]?
+
     init?(map: Map) {
 
     }
@@ -122,7 +125,7 @@ struct ItemModel: Mappable {
         font            <- map["data.font"]
         cover           <- map["data.header.cover"]
         image           <- map["data.image"]
-        actionUrl       <- map["data.actionUrl"]
+        actionUrl       <- map["data.header.actionUrl"]
         clickUrl        <- map["data.adTrack.0.clickUrl"]
         id              <- map["data.id"]
         title           <- map["data.title"]
@@ -135,6 +138,7 @@ struct ItemModel: Mappable {
         collectionCount <- map["data.consumption.collectionCount"]
         shareCount      <- map["data.consumption.shareCount"]
         replyCount      <- map["data.consumption.replyCount"]
+        itemList        <- map["data.itemList"]
     }
 }
 

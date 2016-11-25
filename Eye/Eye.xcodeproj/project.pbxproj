@@ -14,12 +14,12 @@
 		5068FAC71DC8BDFE006BDC88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5068FAC51DC8BDFE006BDC88 /* LaunchScreen.storyboard */; };
 		5068FAD21DC8BDFE006BDC88 /* EyeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5068FAD11DC8BDFE006BDC88 /* EyeTests.swift */; };
 		5068FADD1DC8BDFE006BDC88 /* EyeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5068FADC1DC8BDFE006BDC88 /* EyeUITests.swift */; };
+		508C9C971DE85C300061AF02 /* EYEActionCardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508C9C951DE85C300061AF02 /* EYEActionCardCollectionViewCell.swift */; };
+		508C9C981DE85C300061AF02 /* EYEActionCardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 508C9C961DE85C300061AF02 /* EYEActionCardCollectionViewCell.xib */; };
 		50AAA3FD1DE2F090009F68B6 /* EYEBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AAA3FC1DE2F090009F68B6 /* EYEBaseViewController.swift */; };
 		50AAA4001DE2F0F3009F68B6 /* EYESelectedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AAA3FF1DE2F0F3009F68B6 /* EYESelectedViewController.swift */; };
 		50AAA4021DE2F561009F68B6 /* EYESelectedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AAA4011DE2F561009F68B6 /* EYESelectedModel.swift */; };
 		50AAA4071DE46345009F68B6 /* String+Eye.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AAA4061DE46345009F68B6 /* String+Eye.swift */; };
-		50B4EABC1DE5F4E20052352A /* EYETextHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B4EABA1DE5F4E20052352A /* EYETextHeaderTableViewCell.swift */; };
-		50B4EABD1DE5F4E20052352A /* EYETextHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50B4EABB1DE5F4E20052352A /* EYETextHeaderTableViewCell.xib */; };
 		50BD4BBD1DDCA4DC00BB2BF0 /* EYELaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BD4BBC1DDCA4DC00BB2BF0 /* EYELaunchView.swift */; };
 		50BD4BBF1DDCA53500BB2BF0 /* EYELaunchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50BD4BBE1DDCA53500BB2BF0 /* EYELaunchView.xib */; };
 		50C03A001DD17B9600186E95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C039FC1DD17B9200186E95 /* AppDelegate.swift */; };
@@ -27,12 +27,18 @@
 		50C03A071DD1802200186E95 /* Lobster 1.4.otf in Resources */ = {isa = PBXBuildFile; fileRef = 50C03A061DD1802200186E95 /* Lobster 1.4.otf */; };
 		50C03A0A1DD1803100186E95 /* FZLTXIHJW--GB1-0.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 50C03A081DD1803100186E95 /* FZLTXIHJW--GB1-0.TTF */; };
 		50C03A0B1DD1803100186E95 /* FZLTZCHJW--GB1-0.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 50C03A091DD1803100186E95 /* FZLTZCHJW--GB1-0.TTF */; };
-		50CD19A41DE705C4007D068A /* EYESelectedFooterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CD19A21DE705C4007D068A /* EYESelectedFooterTableViewCell.swift */; };
-		50CD19A51DE705C4007D068A /* EYESelectedFooterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50CD19A31DE705C4007D068A /* EYESelectedFooterTableViewCell.xib */; };
+		50CD19B51DE815D3007D068A /* EYETextHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CD19AB1DE815D3007D068A /* EYETextHeaderTableViewCell.swift */; };
+		50CD19B61DE815D3007D068A /* EYETextHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50CD19AC1DE815D3007D068A /* EYETextHeaderTableViewCell.xib */; };
+		50CD19B71DE815D3007D068A /* EYEVideoBeanForClientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CD19AD1DE815D3007D068A /* EYEVideoBeanForClientTableViewCell.swift */; };
+		50CD19B81DE815D3007D068A /* EYEVideoBeanForClientTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50CD19AE1DE815D3007D068A /* EYEVideoBeanForClientTableViewCell.xib */; };
+		50CD19B91DE815D3007D068A /* EYESelectedFooterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CD19B01DE815D3007D068A /* EYESelectedFooterTableViewCell.swift */; };
+		50CD19BA1DE815D3007D068A /* EYESelectedFooterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50CD19B11DE815D3007D068A /* EYESelectedFooterTableViewCell.xib */; };
+		50CD19BB1DE815D3007D068A /* EYEItemCollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CD19B31DE815D3007D068A /* EYEItemCollectionTableViewCell.swift */; };
+		50CD19BC1DE815D3007D068A /* EYEItemCollectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50CD19B41DE815D3007D068A /* EYEItemCollectionTableViewCell.xib */; };
+		50CD19BF1DE82E87007D068A /* EYEVideoBeanForClientCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CD19BD1DE82E87007D068A /* EYEVideoBeanForClientCollectionViewCell.swift */; };
+		50CD19C01DE82E87007D068A /* EYEVideoBeanForClientCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50CD19BE1DE82E87007D068A /* EYEVideoBeanForClientCollectionViewCell.xib */; };
 		50DACCD31DE56F2E00311A8E /* UIFont+Eye.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DACCD21DE56F2E00311A8E /* UIFont+Eye.swift */; };
 		50DACCD71DE5728B00311A8E /* UIView+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DACCD61DE5728B00311A8E /* UIView+Frame.swift */; };
-		50DACCDB1DE5763400311A8E /* EYEVideoBeanForClientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DACCD91DE5763400311A8E /* EYEVideoBeanForClientTableViewCell.swift */; };
-		50DACCDC1DE5763400311A8E /* EYEVideoBeanForClientTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50DACCDA1DE5763400311A8E /* EYEVideoBeanForClientTableViewCell.xib */; };
 		50DACCE01DE59DC300311A8E /* EYEConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DACCDF1DE59DC300311A8E /* EYEConstant.swift */; };
 		50DACCE21DE5A3DF00311A8E /* NSObject+Eye.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DACCE11DE5A3DF00311A8E /* NSObject+Eye.swift */; };
 		76E3270690A21AAF7E756AE2 /* Pods_Eye.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4F7BB84290A2430AF2F1E6E /* Pods_Eye.framework */; };
@@ -70,12 +76,12 @@
 		5068FAD81DC8BDFE006BDC88 /* EyeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EyeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5068FADC1DC8BDFE006BDC88 /* EyeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyeUITests.swift; sourceTree = "<group>"; };
 		5068FADE1DC8BDFE006BDC88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		508C9C951DE85C300061AF02 /* EYEActionCardCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EYEActionCardCollectionViewCell.swift; sourceTree = "<group>"; };
+		508C9C961DE85C300061AF02 /* EYEActionCardCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EYEActionCardCollectionViewCell.xib; sourceTree = "<group>"; };
 		50AAA3FC1DE2F090009F68B6 /* EYEBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EYEBaseViewController.swift; sourceTree = "<group>"; };
 		50AAA3FF1DE2F0F3009F68B6 /* EYESelectedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EYESelectedViewController.swift; sourceTree = "<group>"; };
 		50AAA4011DE2F561009F68B6 /* EYESelectedModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EYESelectedModel.swift; sourceTree = "<group>"; };
 		50AAA4061DE46345009F68B6 /* String+Eye.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Eye.swift"; sourceTree = "<group>"; };
-		50B4EABA1DE5F4E20052352A /* EYETextHeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EYETextHeaderTableViewCell.swift; sourceTree = "<group>"; };
-		50B4EABB1DE5F4E20052352A /* EYETextHeaderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EYETextHeaderTableViewCell.xib; sourceTree = "<group>"; };
 		50BD4BBC1DDCA4DC00BB2BF0 /* EYELaunchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EYELaunchView.swift; sourceTree = "<group>"; };
 		50BD4BBE1DDCA53500BB2BF0 /* EYELaunchView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EYELaunchView.xib; sourceTree = "<group>"; };
 		50C039FC1DD17B9200186E95 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,12 +89,18 @@
 		50C03A061DD1802200186E95 /* Lobster 1.4.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lobster 1.4.otf"; sourceTree = "<group>"; };
 		50C03A081DD1803100186E95 /* FZLTXIHJW--GB1-0.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FZLTXIHJW--GB1-0.TTF"; sourceTree = "<group>"; };
 		50C03A091DD1803100186E95 /* FZLTZCHJW--GB1-0.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FZLTZCHJW--GB1-0.TTF"; sourceTree = "<group>"; };
-		50CD19A21DE705C4007D068A /* EYESelectedFooterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EYESelectedFooterTableViewCell.swift; sourceTree = "<group>"; };
-		50CD19A31DE705C4007D068A /* EYESelectedFooterTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EYESelectedFooterTableViewCell.xib; sourceTree = "<group>"; };
+		50CD19AB1DE815D3007D068A /* EYETextHeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EYETextHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		50CD19AC1DE815D3007D068A /* EYETextHeaderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EYETextHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		50CD19AD1DE815D3007D068A /* EYEVideoBeanForClientTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EYEVideoBeanForClientTableViewCell.swift; sourceTree = "<group>"; };
+		50CD19AE1DE815D3007D068A /* EYEVideoBeanForClientTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EYEVideoBeanForClientTableViewCell.xib; sourceTree = "<group>"; };
+		50CD19B01DE815D3007D068A /* EYESelectedFooterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EYESelectedFooterTableViewCell.swift; sourceTree = "<group>"; };
+		50CD19B11DE815D3007D068A /* EYESelectedFooterTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EYESelectedFooterTableViewCell.xib; sourceTree = "<group>"; };
+		50CD19B31DE815D3007D068A /* EYEItemCollectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EYEItemCollectionTableViewCell.swift; sourceTree = "<group>"; };
+		50CD19B41DE815D3007D068A /* EYEItemCollectionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EYEItemCollectionTableViewCell.xib; sourceTree = "<group>"; };
+		50CD19BD1DE82E87007D068A /* EYEVideoBeanForClientCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EYEVideoBeanForClientCollectionViewCell.swift; sourceTree = "<group>"; };
+		50CD19BE1DE82E87007D068A /* EYEVideoBeanForClientCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EYEVideoBeanForClientCollectionViewCell.xib; sourceTree = "<group>"; };
 		50DACCD21DE56F2E00311A8E /* UIFont+Eye.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Eye.swift"; sourceTree = "<group>"; };
 		50DACCD61DE5728B00311A8E /* UIView+Frame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Frame.swift"; sourceTree = "<group>"; };
-		50DACCD91DE5763400311A8E /* EYEVideoBeanForClientTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EYEVideoBeanForClientTableViewCell.swift; sourceTree = "<group>"; };
-		50DACCDA1DE5763400311A8E /* EYEVideoBeanForClientTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EYEVideoBeanForClientTableViewCell.xib; sourceTree = "<group>"; };
 		50DACCDF1DE59DC300311A8E /* EYEConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EYEConstant.swift; sourceTree = "<group>"; };
 		50DACCE11DE5A3DF00311A8E /* NSObject+Eye.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Eye.swift"; sourceTree = "<group>"; };
 		50DEBCE31DD1F8010021718D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -279,15 +291,45 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		50CD19AA1DE815D3007D068A /* FeedSection */ = {
+			isa = PBXGroup;
+			children = (
+				50CD19AB1DE815D3007D068A /* EYETextHeaderTableViewCell.swift */,
+				50CD19AC1DE815D3007D068A /* EYETextHeaderTableViewCell.xib */,
+				50CD19AD1DE815D3007D068A /* EYEVideoBeanForClientTableViewCell.swift */,
+				50CD19AE1DE815D3007D068A /* EYEVideoBeanForClientTableViewCell.xib */,
+			);
+			path = FeedSection;
+			sourceTree = "<group>";
+		};
+		50CD19AF1DE815D3007D068A /* Footer */ = {
+			isa = PBXGroup;
+			children = (
+				50CD19B01DE815D3007D068A /* EYESelectedFooterTableViewCell.swift */,
+				50CD19B11DE815D3007D068A /* EYESelectedFooterTableViewCell.xib */,
+			);
+			path = Footer;
+			sourceTree = "<group>";
+		};
+		50CD19B21DE815D3007D068A /* LightTopicSection */ = {
+			isa = PBXGroup;
+			children = (
+				50CD19B31DE815D3007D068A /* EYEItemCollectionTableViewCell.swift */,
+				50CD19B41DE815D3007D068A /* EYEItemCollectionTableViewCell.xib */,
+				50CD19BD1DE82E87007D068A /* EYEVideoBeanForClientCollectionViewCell.swift */,
+				50CD19BE1DE82E87007D068A /* EYEVideoBeanForClientCollectionViewCell.xib */,
+				508C9C951DE85C300061AF02 /* EYEActionCardCollectionViewCell.swift */,
+				508C9C961DE85C300061AF02 /* EYEActionCardCollectionViewCell.xib */,
+			);
+			path = LightTopicSection;
+			sourceTree = "<group>";
+		};
 		50DACCD81DE5757C00311A8E /* Selected */ = {
 			isa = PBXGroup;
 			children = (
-				50DACCD91DE5763400311A8E /* EYEVideoBeanForClientTableViewCell.swift */,
-				50DACCDA1DE5763400311A8E /* EYEVideoBeanForClientTableViewCell.xib */,
-				50B4EABA1DE5F4E20052352A /* EYETextHeaderTableViewCell.swift */,
-				50B4EABB1DE5F4E20052352A /* EYETextHeaderTableViewCell.xib */,
-				50CD19A21DE705C4007D068A /* EYESelectedFooterTableViewCell.swift */,
-				50CD19A31DE705C4007D068A /* EYESelectedFooterTableViewCell.xib */,
+				50CD19AA1DE815D3007D068A /* FeedSection */,
+				50CD19AF1DE815D3007D068A /* Footer */,
+				50CD19B21DE815D3007D068A /* LightTopicSection */,
 			);
 			path = Selected;
 			sourceTree = "<group>";
@@ -421,17 +463,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50CD19B61DE815D3007D068A /* EYETextHeaderTableViewCell.xib in Resources */,
+				50CD19BA1DE815D3007D068A /* EYESelectedFooterTableViewCell.xib in Resources */,
 				50C03A071DD1802200186E95 /* Lobster 1.4.otf in Resources */,
-				50CD19A51DE705C4007D068A /* EYESelectedFooterTableViewCell.xib in Resources */,
 				5068FAC71DC8BDFE006BDC88 /* LaunchScreen.storyboard in Resources */,
+				508C9C981DE85C300061AF02 /* EYEActionCardCollectionViewCell.xib in Resources */,
+				50CD19BC1DE815D3007D068A /* EYEItemCollectionTableViewCell.xib in Resources */,
 				5068FAC41DC8BDFE006BDC88 /* Assets.xcassets in Resources */,
+				50CD19B81DE815D3007D068A /* EYEVideoBeanForClientTableViewCell.xib in Resources */,
 				50BD4BBF1DDCA53500BB2BF0 /* EYELaunchView.xib in Resources */,
 				5068FAC21DC8BDFE006BDC88 /* Main.storyboard in Resources */,
 				50105CCC1DD37A5800620FE3 /* Splash_BKG.jpg in Resources */,
 				50C03A0A1DD1803100186E95 /* FZLTXIHJW--GB1-0.TTF in Resources */,
-				50B4EABD1DE5F4E20052352A /* EYETextHeaderTableViewCell.xib in Resources */,
 				50C03A0B1DD1803100186E95 /* FZLTZCHJW--GB1-0.TTF in Resources */,
-				50DACCDC1DE5763400311A8E /* EYEVideoBeanForClientTableViewCell.xib in Resources */,
+				50CD19C01DE82E87007D068A /* EYEVideoBeanForClientCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,19 +549,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				508C9C971DE85C300061AF02 /* EYEActionCardCollectionViewCell.swift in Sources */,
+				50CD19BB1DE815D3007D068A /* EYEItemCollectionTableViewCell.swift in Sources */,
+				50CD19B51DE815D3007D068A /* EYETextHeaderTableViewCell.swift in Sources */,
 				50AAA4071DE46345009F68B6 /* String+Eye.swift in Sources */,
+				50CD19BF1DE82E87007D068A /* EYEVideoBeanForClientCollectionViewCell.swift in Sources */,
 				50C03A041DD17D6C00186E95 /* EYEMainViewController.swift in Sources */,
 				50C03A001DD17B9600186E95 /* AppDelegate.swift in Sources */,
 				50DACCE21DE5A3DF00311A8E /* NSObject+Eye.swift in Sources */,
 				50AAA3FD1DE2F090009F68B6 /* EYEBaseViewController.swift in Sources */,
-				50DACCDB1DE5763400311A8E /* EYEVideoBeanForClientTableViewCell.swift in Sources */,
-				50B4EABC1DE5F4E20052352A /* EYETextHeaderTableViewCell.swift in Sources */,
+				50CD19B71DE815D3007D068A /* EYEVideoBeanForClientTableViewCell.swift in Sources */,
 				50BD4BBD1DDCA4DC00BB2BF0 /* EYELaunchView.swift in Sources */,
+				50CD19B91DE815D3007D068A /* EYESelectedFooterTableViewCell.swift in Sources */,
 				50DACCD31DE56F2E00311A8E /* UIFont+Eye.swift in Sources */,
 				50DACCD71DE5728B00311A8E /* UIView+Frame.swift in Sources */,
 				50AAA4021DE2F561009F68B6 /* EYESelectedModel.swift in Sources */,
 				50DACCE01DE59DC300311A8E /* EYEConstant.swift in Sources */,
-				50CD19A41DE705C4007D068A /* EYESelectedFooterTableViewCell.swift in Sources */,
 				500631161DE206DE006FAE29 /* EYEURL.swift in Sources */,
 				50AAA4001DE2F0F3009F68B6 /* EYESelectedViewController.swift in Sources */,
 			);

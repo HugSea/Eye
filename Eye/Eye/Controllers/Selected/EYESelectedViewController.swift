@@ -30,6 +30,7 @@ class EYESelectedViewController: EYEBaseViewController {
         tableView.register(UINib(nibName: EYEVideoBeanForClientTableViewCell.className, bundle: nil), forCellReuseIdentifier: EYEVideoBeanForClientTableViewCell.className)
         tableView.register(UINib(nibName: EYETextHeaderTableViewCell.className, bundle: nil), forCellReuseIdentifier: EYETextHeaderTableViewCell.className)
         tableView.register(UINib(nibName: EYESelectedFooterTableViewCell.className, bundle: nil), forCellReuseIdentifier: EYESelectedFooterTableViewCell.className)
+        tableView.register(UINib(nibName: EYEItemCollectionTableViewCell.className, bundle: nil), forCellReuseIdentifier: EYEItemCollectionTableViewCell.className)
 
         tableView.dataSource = self
         tableView.delegate = self
@@ -47,6 +48,10 @@ class EYESelectedViewController: EYEBaseViewController {
             if let value = response.result.value {
                 let sectionList = Mapper<EYESelectedModel>().map(JSONObject: value)
                 self.sectionList = (sectionList?.sectionList)!
+                for sectionModel: SectionModel in self.sectionList {
+                    let itemModel: ItemModel = sectionModel.itemList![0]
+                    print(itemModel.actionUrl)
+                }
                 self.tableView.reloadData()
             }
         }
@@ -61,7 +66,7 @@ class EYESelectedViewController: EYEBaseViewController {
 extension EYESelectedViewController: UITableViewDataSource, UITableViewDelegate {
 
     func numberOfSections(in tableView: UITableView) -> Int {
-        return sectionList.count > 0 ? 1 : 0;
+        return sectionList.count > 0 ? 2 : 0;
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -81,11 +86,14 @@ extension EYESelectedViewController: UITableViewDataSource, UITableViewDelegate 
             case "forwardFooter":
                 let cell = tableView.dequeueReusableCell(withIdentifier: EYESelectedFooterTableViewCell.className) as! EYESelectedFooterTableViewCell
                 cell.contentViewHeightConstraint.constant = 60.0
+                cell.isShowSubviews(true)
                 cell.content = footerModel.text
                 return cell
             case "blankFooter":
                 let cell = tableView.dequeueReusableCell(withIdentifier: EYESelectedFooterTableViewCell.className) as! EYESelectedFooterTableViewCell
                 cell.contentViewHeightConstraint.constant = 0
+                cell.contentLabel.isHidden = true
+                cell.isShowSubviews(false)
                 return cell
             default:
                 return UITableViewCell()
@@ -106,6 +114,10 @@ extension EYESelectedViewController: UITableViewDataSource, UITableViewDelegate 
             } else {
                 return UITableViewCell()
             }
+        case "lightTopicSection":
+            let cell = tableView.dequeueReusableCell(withIdentifier: EYEItemCollectionTableViewCell.className) as! EYEItemCollectionTableViewCell
+            cell.itemModel = itemModel
+            return cell
         default:
             return UITableViewCell()
         }
@@ -120,7 +132,7 @@ extension EYESelectedViewController: UITableViewDataSource, UITableViewDelegate 
             let footer: FooterModel = sectionModel.footer
             switch footer.type {
             case "forwardFooter":
-                return EYEConstant.TableViewCellHeight_ForwardFooter
+                return EYEConstant.TableViewCellHeight_ForwardFooter 
             case "blankFooter":
                 return EYEConstant.TableViewCellHeight_BlankFooter
             default:
@@ -129,11 +141,17 @@ extension EYESelectedViewController: UITableViewDataSource, UITableViewDelegate 
         }
 
         let itemModel: ItemModel = sectionModel.itemList![indexPath.row]
-        switch itemModel.type {
-        case "video":
-            return EYEConstant.TableViewCellHeight_VideoBeanForClient
-        case "textHeader":
-            return EYEConstant.TableViewCellHeight_TextHeader
+        switch sectionModel.type {
+        case "feedSection":
+            if itemModel.type == "video" {
+                return EYEConstant.TableViewCellHeight_VideoBeanForClient
+            } else if itemModel.type == "textHeader" {
+                return EYEConstant.TableViewCellHeight_TextHeader
+            } else {
+                return 0
+            }
+        case "lightTopicSection":
+            return EYEConstant.TableViewCellHeight_ItemCollection
         default:
             return 0
         }
