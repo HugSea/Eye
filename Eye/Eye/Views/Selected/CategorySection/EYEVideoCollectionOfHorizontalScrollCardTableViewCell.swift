@@ -8,7 +8,7 @@
 
 import UIKit
 
-let kCollectionViewMaxSection = 1000
+let kCollectionViewMaxSection = 100
 
 class EYEVideoCollectionOfHorizontalScrollCardTableViewCell: UITableViewCell {
 
@@ -32,8 +32,13 @@ class EYEVideoCollectionOfHorizontalScrollCardTableViewCell: UITableViewCell {
     var itemModel: ItemModel! {
         didSet {
             titleLabel.text = itemModel.hTitle
+            let attribute: NSMutableAttributedString = NSMutableAttributedString(string: titleLabel.text!)
+            attribute.addAttributes([NSKernAttributeName: NSNumber(value: 5)], range: NSMakeRange(0, (titleLabel.text?.characters.count)!))
+            titleLabel.attributedText = attribute
             subTitleLabel.text = itemModel.hSubTitle
             pageControl.numberOfPages = (itemModel.itemList?.count)!
+            
+            self.layoutIfNeeded()
             collectionView.scrollToItem(at: IndexPath(item: 0, section: kCollectionViewMaxSection / 2), at: .centeredHorizontally, animated: false)
             collectionView.reloadData()
         }
@@ -61,7 +66,7 @@ extension EYEVideoCollectionOfHorizontalScrollCardTableViewCell: UICollectionVie
 // MARK: --------------------- UIScrollViewDelegate ---------------------
 extension EYEVideoCollectionOfHorizontalScrollCardTableViewCell: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        let page = Int((scrollView.contentOffset.x + EYEConstant.CollectionViewCellSize_CSVideoBeanForClient.width * 0.5) / EYEConstant.CollectionViewCellSize_CSVideoBeanForClient.width) % itemModel.itemList!.count
+        let page = Int((scrollView.contentOffset.x + 18 + (EYEConstant.CollectionViewCellSize_CSVideoBeanForClient.width + 5) * 0.5) / (EYEConstant.CollectionViewCellSize_CSVideoBeanForClient.width + 5)) % itemModel.itemList!.count
         pageControl.currentPage = page
     }
 }
