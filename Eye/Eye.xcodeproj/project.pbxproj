@@ -16,6 +16,11 @@
 		5068FADD1DC8BDFE006BDC88 /* EyeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5068FADC1DC8BDFE006BDC88 /* EyeUITests.swift */; };
 		508C9C971DE85C300061AF02 /* EYEActionCardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508C9C951DE85C300061AF02 /* EYEActionCardCollectionViewCell.swift */; };
 		508C9C981DE85C300061AF02 /* EYEActionCardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 508C9C961DE85C300061AF02 /* EYEActionCardCollectionViewCell.xib */; };
+		508C9C9C1DED5C780061AF02 /* EYEVideoCollectionOfHorizontalScrollCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508C9C9A1DED5C780061AF02 /* EYEVideoCollectionOfHorizontalScrollCardTableViewCell.swift */; };
+		508C9C9D1DED5C790061AF02 /* EYEVideoCollectionOfHorizontalScrollCardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 508C9C9B1DED5C780061AF02 /* EYEVideoCollectionOfHorizontalScrollCardTableViewCell.xib */; };
+		508C9CA01DED66370061AF02 /* EYECSVideoBeanForClientCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508C9C9E1DED66370061AF02 /* EYECSVideoBeanForClientCollectionViewCell.swift */; };
+		508C9CA11DED66370061AF02 /* EYECSVideoBeanForClientCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 508C9C9F1DED66370061AF02 /* EYECSVideoBeanForClientCollectionViewCell.xib */; };
+		508C9CA31DED6F310061AF02 /* EYECSVideoBeanForClientCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508C9CA21DED6F310061AF02 /* EYECSVideoBeanForClientCollectionViewLayout.swift */; };
 		50AAA3FD1DE2F090009F68B6 /* EYEBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AAA3FC1DE2F090009F68B6 /* EYEBaseViewController.swift */; };
 		50AAA4001DE2F0F3009F68B6 /* EYESelectedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AAA3FF1DE2F0F3009F68B6 /* EYESelectedViewController.swift */; };
 		50AAA4021DE2F561009F68B6 /* EYESelectedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50AAA4011DE2F561009F68B6 /* EYESelectedModel.swift */; };
@@ -78,6 +83,11 @@
 		5068FADE1DC8BDFE006BDC88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		508C9C951DE85C300061AF02 /* EYEActionCardCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EYEActionCardCollectionViewCell.swift; sourceTree = "<group>"; };
 		508C9C961DE85C300061AF02 /* EYEActionCardCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EYEActionCardCollectionViewCell.xib; sourceTree = "<group>"; };
+		508C9C9A1DED5C780061AF02 /* EYEVideoCollectionOfHorizontalScrollCardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EYEVideoCollectionOfHorizontalScrollCardTableViewCell.swift; sourceTree = "<group>"; };
+		508C9C9B1DED5C780061AF02 /* EYEVideoCollectionOfHorizontalScrollCardTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EYEVideoCollectionOfHorizontalScrollCardTableViewCell.xib; sourceTree = "<group>"; };
+		508C9C9E1DED66370061AF02 /* EYECSVideoBeanForClientCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EYECSVideoBeanForClientCollectionViewCell.swift; sourceTree = "<group>"; };
+		508C9C9F1DED66370061AF02 /* EYECSVideoBeanForClientCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EYECSVideoBeanForClientCollectionViewCell.xib; sourceTree = "<group>"; };
+		508C9CA21DED6F310061AF02 /* EYECSVideoBeanForClientCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EYECSVideoBeanForClientCollectionViewLayout.swift; sourceTree = "<group>"; };
 		50AAA3FC1DE2F090009F68B6 /* EYEBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EYEBaseViewController.swift; sourceTree = "<group>"; };
 		50AAA3FF1DE2F0F3009F68B6 /* EYESelectedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EYESelectedViewController.swift; sourceTree = "<group>"; };
 		50AAA4011DE2F561009F68B6 /* EYESelectedModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EYESelectedModel.swift; sourceTree = "<group>"; };
@@ -198,6 +208,18 @@
 				5068FADE1DC8BDFE006BDC88 /* Info.plist */,
 			);
 			path = EyeUITests;
+			sourceTree = "<group>";
+		};
+		508C9C991DED5C310061AF02 /* CategorySection */ = {
+			isa = PBXGroup;
+			children = (
+				508C9C9A1DED5C780061AF02 /* EYEVideoCollectionOfHorizontalScrollCardTableViewCell.swift */,
+				508C9C9B1DED5C780061AF02 /* EYEVideoCollectionOfHorizontalScrollCardTableViewCell.xib */,
+				508C9C9E1DED66370061AF02 /* EYECSVideoBeanForClientCollectionViewCell.swift */,
+				508C9C9F1DED66370061AF02 /* EYECSVideoBeanForClientCollectionViewCell.xib */,
+				508C9CA21DED6F310061AF02 /* EYECSVideoBeanForClientCollectionViewLayout.swift */,
+			);
+			path = CategorySection;
 			sourceTree = "<group>";
 		};
 		50AAA3FE1DE2F0B3009F68B6 /* Selected */ = {
@@ -330,6 +352,7 @@
 				50CD19AA1DE815D3007D068A /* FeedSection */,
 				50CD19AF1DE815D3007D068A /* Footer */,
 				50CD19B21DE815D3007D068A /* LightTopicSection */,
+				508C9C991DED5C310061AF02 /* CategorySection */,
 			);
 			path = Selected;
 			sourceTree = "<group>";
@@ -464,6 +487,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				50CD19B61DE815D3007D068A /* EYETextHeaderTableViewCell.xib in Resources */,
+				508C9CA11DED66370061AF02 /* EYECSVideoBeanForClientCollectionViewCell.xib in Resources */,
 				50CD19BA1DE815D3007D068A /* EYESelectedFooterTableViewCell.xib in Resources */,
 				50C03A071DD1802200186E95 /* Lobster 1.4.otf in Resources */,
 				5068FAC71DC8BDFE006BDC88 /* LaunchScreen.storyboard in Resources */,
@@ -474,6 +498,7 @@
 				50BD4BBF1DDCA53500BB2BF0 /* EYELaunchView.xib in Resources */,
 				5068FAC21DC8BDFE006BDC88 /* Main.storyboard in Resources */,
 				50105CCC1DD37A5800620FE3 /* Splash_BKG.jpg in Resources */,
+				508C9C9D1DED5C790061AF02 /* EYEVideoCollectionOfHorizontalScrollCardTableViewCell.xib in Resources */,
 				50C03A0A1DD1803100186E95 /* FZLTXIHJW--GB1-0.TTF in Resources */,
 				50C03A0B1DD1803100186E95 /* FZLTZCHJW--GB1-0.TTF in Resources */,
 				50CD19C01DE82E87007D068A /* EYEVideoBeanForClientCollectionViewCell.xib in Resources */,
@@ -551,7 +576,9 @@
 			files = (
 				508C9C971DE85C300061AF02 /* EYEActionCardCollectionViewCell.swift in Sources */,
 				50CD19BB1DE815D3007D068A /* EYEItemCollectionTableViewCell.swift in Sources */,
+				508C9CA31DED6F310061AF02 /* EYECSVideoBeanForClientCollectionViewLayout.swift in Sources */,
 				50CD19B51DE815D3007D068A /* EYETextHeaderTableViewCell.swift in Sources */,
+				508C9C9C1DED5C780061AF02 /* EYEVideoCollectionOfHorizontalScrollCardTableViewCell.swift in Sources */,
 				50AAA4071DE46345009F68B6 /* String+Eye.swift in Sources */,
 				50CD19BF1DE82E87007D068A /* EYEVideoBeanForClientCollectionViewCell.swift in Sources */,
 				50C03A041DD17D6C00186E95 /* EYEMainViewController.swift in Sources */,
@@ -565,6 +592,7 @@
 				50DACCD71DE5728B00311A8E /* UIView+Frame.swift in Sources */,
 				50AAA4021DE2F561009F68B6 /* EYESelectedModel.swift in Sources */,
 				50DACCE01DE59DC300311A8E /* EYEConstant.swift in Sources */,
+				508C9CA01DED66370061AF02 /* EYECSVideoBeanForClientCollectionViewCell.swift in Sources */,
 				500631161DE206DE006FAE29 /* EYEURL.swift in Sources */,
 				50AAA4001DE2F0F3009F68B6 /* EYESelectedViewController.swift in Sources */,
 			);

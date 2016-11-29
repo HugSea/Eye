@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 let kWidthScale: CGFloat = UIScreen.main.bounds.size.width / 375.0
+let kScreenWidth: CGFloat = UIScreen.main.bounds.width
 
 struct EYEConstant {
     static let ScreenRect = UIScreen.main.bounds
@@ -27,10 +28,14 @@ struct EYEConstant {
     static let TableViewCellHeight_BlankFooter: CGFloat = 7.0
     // type = "ItemCollection"
     static let TableViewCellHeight_ItemCollection: CGFloat = kWidthScale * 424.0
+    // type = "VideoCollectionOfHorizontalScrollCard"
+    static let TableViewCellHeight_VideoCollectionOfHorizontalScrollCard: CGFloat = 80 + kWidthScale * 200 + 92
 
-    // CollectionViewCell高度
+    // CollectionViewCell Size
     // type = "VideoBeanForClient"
     static let CollectionViewCellSize_VideoBeanForClient: CGSize = CGSize(width: 260, height: 200)
     // type = "ActionCard"
     static let CollectionViewCellSize_ActionCard: CGSize = CGSize(width: 146, height: 200)
+    // type = "CSVideoBeanForClient"
+    static let CollectionViewCellSize_CSVideoBeanForClient: CGSize = CGSize(width: kScreenWidth - 36, height: 92 + kWidthScale * 200)
 }

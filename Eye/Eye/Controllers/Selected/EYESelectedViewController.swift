@@ -31,6 +31,7 @@ class EYESelectedViewController: EYEBaseViewController {
         tableView.register(UINib(nibName: EYETextHeaderTableViewCell.className, bundle: nil), forCellReuseIdentifier: EYETextHeaderTableViewCell.className)
         tableView.register(UINib(nibName: EYESelectedFooterTableViewCell.className, bundle: nil), forCellReuseIdentifier: EYESelectedFooterTableViewCell.className)
         tableView.register(UINib(nibName: EYEItemCollectionTableViewCell.className, bundle: nil), forCellReuseIdentifier: EYEItemCollectionTableViewCell.className)
+        tableView.register(UINib(nibName: EYEVideoCollectionOfHorizontalScrollCardTableViewCell.className, bundle: nil), forCellReuseIdentifier: EYEVideoCollectionOfHorizontalScrollCardTableViewCell.className)
 
         tableView.dataSource = self
         tableView.delegate = self
@@ -66,7 +67,7 @@ class EYESelectedViewController: EYEBaseViewController {
 extension EYESelectedViewController: UITableViewDataSource, UITableViewDelegate {
 
     func numberOfSections(in tableView: UITableView) -> Int {
-        return sectionList.count > 0 ? 2 : 0;
+        return sectionList.count;
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -118,6 +119,10 @@ extension EYESelectedViewController: UITableViewDataSource, UITableViewDelegate 
             let cell = tableView.dequeueReusableCell(withIdentifier: EYEItemCollectionTableViewCell.className) as! EYEItemCollectionTableViewCell
             cell.itemModel = itemModel
             return cell
+        case "categorySection":
+            let cell = tableView.dequeueReusableCell(withIdentifier: EYEVideoCollectionOfHorizontalScrollCardTableViewCell.className) as! EYEVideoCollectionOfHorizontalScrollCardTableViewCell
+            cell.itemModel = itemModel
+            return cell
         default:
             return UITableViewCell()
         }
@@ -152,6 +157,8 @@ extension EYESelectedViewController: UITableViewDataSource, UITableViewDelegate 
             }
         case "lightTopicSection":
             return EYEConstant.TableViewCellHeight_ItemCollection
+        case "categorySection":
+            return EYEConstant.TableViewCellHeight_VideoCollectionOfHorizontalScrollCard
         default:
             return 0
         }

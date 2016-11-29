@@ -23,7 +23,7 @@ class EYEVideoBeanForClientCollectionViewCell: UICollectionViewCell {
         didSet {
             picView.kf.setImage(with: URL(string: (itemModel?.feed)!))
             titleLabel.text = itemModel?.title
-            subTitleLabel.text = itemModel?.subTitle
+            subTitleLabel.text = itemModel?.cd_SubTitle
         }
     }
 

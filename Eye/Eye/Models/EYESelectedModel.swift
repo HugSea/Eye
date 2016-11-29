@@ -94,8 +94,8 @@ struct ItemModel: Mappable {
     var playUrl: String?
     // 时间
     var duration: Int?
-    // 副标题
-    var subTitle : String! {
+    // 分类时间组合副标题
+    var cd_SubTitle : String! {
         get {
             if let _ = category, let _ = duration {
                 return "#\(category!)  /  \(Int.durationToTime(duration!))"
@@ -113,6 +113,11 @@ struct ItemModel: Mappable {
 
     // ItemCollection
     var itemList: [ItemModel]?
+
+    // Header标题
+    var hTitle: String?
+    // Header副标题
+    var hSubTitle: String?
 
     init?(map: Map) {
 
@@ -139,6 +144,8 @@ struct ItemModel: Mappable {
         shareCount      <- map["data.consumption.shareCount"]
         replyCount      <- map["data.consumption.replyCount"]
         itemList        <- map["data.itemList"]
+        hTitle          <- map["data.header.title"]
+        hSubTitle       <- map["data.header.subTitle"]
     }
 }
 
