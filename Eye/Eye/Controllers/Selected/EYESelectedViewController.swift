@@ -13,7 +13,9 @@ import ObjectMapper
 class EYESelectedViewController: EYEBaseViewController {
 
     @IBOutlet weak var tableView: UITableView!
-
+    @IBOutlet weak var topView: UIView!
+    @IBOutlet weak var topViewHeightConstraint: NSLayoutConstraint!
+    
     var sectionList: [SectionModel] = [SectionModel]()
 
     // MARK: --------------------- Life Cycle ---------------------
@@ -23,9 +25,19 @@ class EYESelectedViewController: EYEBaseViewController {
         setupUI()
         requestData()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        UIApplication.shared.statusBarStyle = .lightContent
+    }
 
     // MARK: --------------------- Private Methods ---------------------
     private func setupUI() {
+        let tableHeaderView = UIButton(type: .custom)
+        tableHeaderView.frame = CGRect(x: 0, y: 0, width: EYEConstant.ScreenWidth, height:214)
+        tableView.tableHeaderView = tableHeaderView
+        tableView.contentInset = UIEdgeInsetsMake(0, 0, 49, 0)
         // 注册TableViewCell
         tableView.register(UINib(nibName: EYEVideoBeanForClientTableViewCell.className, bundle: nil), forCellReuseIdentifier: EYEVideoBeanForClientTableViewCell.className)
         tableView.register(UINib(nibName: EYETextHeaderTableViewCell.className, bundle: nil), forCellReuseIdentifier: EYETextHeaderTableViewCell.className)
@@ -161,6 +173,14 @@ extension EYESelectedViewController: UITableViewDataSource, UITableViewDelegate 
             return EYEConstant.TableViewCellHeight_VideoCollectionOfHorizontalScrollCard
         default:
             return 0
+        }
+    }
+}
+// MARK: --------------------- UIScrollViewDelegate ---------------------
+extension EYESelectedViewController: UIScrollViewDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if scrollView.contentOffset.y < 0 {
+            topViewHeightConstraint.constant = 214 + fabs(scrollView.contentOffset.y)
         }
     }
 }

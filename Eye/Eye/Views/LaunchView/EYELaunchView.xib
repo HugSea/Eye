@@ -39,7 +39,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily appelizers for your eyes. Ban eyepetit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eWV-kC-J0E">
-                    <rect key="frame" x="0.0" y="539" width="375" height="21.5"/>
+                    <rect key="frame" x="0.0" y="540.5" width="375" height="20"/>
                     <fontDescription key="fontDescription" name="Lobster1.4" family="Lobster 1.4" pointSize="17"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
