@@ -7,6 +7,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lobster 1.4.otf">
+            <string>Lobster1.4</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Selected View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -26,14 +31,40 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Home_header" translatesAutoresizingMaskIntoConstraints="NO" id="ley-1d-964">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="214"/>
                                     </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="badge_selected_header" translatesAutoresizingMaskIntoConstraints="NO" id="ilR-Iu-wWg">
+                                        <rect key="frame" x="111" y="24" width="152" height="139"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="139" id="Nk0-rX-40C"/>
+                                            <constraint firstAttribute="width" constant="152" id="mZV-bA-7cj"/>
+                                        </constraints>
+                                    </imageView>
+                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="RMY-Ce-xa9">
+                                        <rect key="frame" x="177" y="178.5" width="20" height="20"/>
+                                    </activityIndicatorView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="- Wednesday, Nov. 30 -" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3wi-R2-SGx">
+                                        <rect key="frame" x="132" y="181" width="111" height="15"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="15" id="Z7c-Xb-T7I"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Lobster1.4" family="Lobster 1.4" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="214" id="0kI-lf-oWp"/>
+                                    <constraint firstItem="RMY-Ce-xa9" firstAttribute="centerX" secondItem="UeM-Tv-YwO" secondAttribute="centerX" id="6vU-Sw-sL3"/>
+                                    <constraint firstItem="RMY-Ce-xa9" firstAttribute="centerY" secondItem="3wi-R2-SGx" secondAttribute="centerY" id="Axl-Ba-alJ"/>
+                                    <constraint firstItem="ilR-Iu-wWg" firstAttribute="centerX" secondItem="UeM-Tv-YwO" secondAttribute="centerX" priority="750" id="M1k-DP-992"/>
                                     <constraint firstItem="ley-1d-964" firstAttribute="top" secondItem="UeM-Tv-YwO" secondAttribute="top" id="SSh-Xk-yPo"/>
                                     <constraint firstItem="ley-1d-964" firstAttribute="leading" secondItem="UeM-Tv-YwO" secondAttribute="leading" id="WDF-TE-jZl"/>
                                     <constraint firstAttribute="trailing" secondItem="ley-1d-964" secondAttribute="trailing" id="WzD-FW-wgW"/>
+                                    <constraint firstItem="ilR-Iu-wWg" firstAttribute="centerY" secondItem="UeM-Tv-YwO" secondAttribute="centerY" priority="750" id="cW4-6F-Els"/>
                                     <constraint firstAttribute="bottom" secondItem="ley-1d-964" secondAttribute="bottom" id="gld-zx-r9C"/>
+                                    <constraint firstAttribute="bottom" secondItem="3wi-R2-SGx" secondAttribute="bottom" constant="18" id="swN-Qh-VQd"/>
+                                    <constraint firstItem="3wi-R2-SGx" firstAttribute="top" relation="greaterThanOrEqual" secondItem="ilR-Iu-wWg" secondAttribute="bottom" constant="18" id="t1c-ms-Pux"/>
+                                    <constraint firstItem="3wi-R2-SGx" firstAttribute="centerX" secondItem="UeM-Tv-YwO" secondAttribute="centerX" id="zWT-LP-kT2"/>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2Z2-qL-QlL">
@@ -73,6 +104,8 @@
                     <nil key="simulatedStatusBarMetrics"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
+                        <outlet property="activityView" destination="RMY-Ce-xa9" id="X4L-6v-bH6"/>
+                        <outlet property="dateLabel" destination="3wi-R2-SGx" id="QZL-9u-V7V"/>
                         <outlet property="tableView" destination="2Z2-qL-QlL" id="cY5-l9-dh6"/>
                         <outlet property="topView" destination="UeM-Tv-YwO" id="S2T-bW-l8P"/>
                         <outlet property="topViewHeightConstraint" destination="0kI-lf-oWp" id="kXB-UV-dSr"/>
@@ -281,6 +314,7 @@
     </scenes>
     <resources>
         <image name="Home_header" width="1242" height="720"/>
+        <image name="badge_selected_header" width="136" height="124"/>
         <image name="bar_ic_search_white" width="44" height="44"/>
         <image name="ic_tab_1" width="49" height="49"/>
         <image name="ic_tab_1_selected" width="49" height="49"/>

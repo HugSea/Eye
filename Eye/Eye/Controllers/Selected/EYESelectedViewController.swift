@@ -15,8 +15,11 @@ class EYESelectedViewController: EYEBaseViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var topView: UIView!
     @IBOutlet weak var topViewHeightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var activityView: UIActivityIndicatorView!
     
     var sectionList: [SectionModel] = [SectionModel]()
+    var isShowActivityView = true;
 
     // MARK: --------------------- Life Cycle ---------------------
     override func viewDidLoad() {
@@ -65,7 +68,20 @@ class EYESelectedViewController: EYEBaseViewController {
                     let itemModel: ItemModel = sectionModel.itemList![0]
                     print(itemModel.actionUrl)
                 }
+                self.activityView.isHidden = true
                 self.tableView.reloadData()
+            }
+        }
+    }
+    
+    fileprivate func pullRefreshWithContentOffsetY(contentOffsetY y: CGFloat) {
+        if y < 0 && self.activityView.isHidden == true {
+            let maxY = max(-45, y)
+            self.dateLabel.alpha = (maxY + 45) / 45.0
+            if maxY == -45 && self.isShowActivityView == true {
+                self.activityView.isHidden = false
+                self.isShowActivityView = false
+                self.requestData()
             }
         }
     }
@@ -179,6 +195,12 @@ extension EYESelectedViewController: UITableViewDataSource, UITableViewDelegate 
 // MARK: --------------------- UIScrollViewDelegate ---------------------
 extension EYESelectedViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        // 下拉刷新
+        self.pullRefreshWithContentOffsetY(contentOffsetY: scrollView.contentOffset.y)
+        if scrollView.contentOffset.y >= 0 {
+            self.isShowActivityView = true
+        }
+        // 顶部视图动画
         if scrollView.contentOffset.y < 0 {
             topViewHeightConstraint.constant = 214 + fabs(scrollView.contentOffset.y)
         }
